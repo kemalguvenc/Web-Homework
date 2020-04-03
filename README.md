@@ -1,2 +1,2 @@
 # Web-Homework
-It's homework for Web Technologies Course
+It's a homework for Web Technologies Course
