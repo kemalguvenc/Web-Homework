@@ -1,0 +1,68 @@
+@font-face {
+        font-family: Head-Font;
+        src: url(LEVIBRUSH.ttf);
+}
+
+header{
+    font-size: 5em;
+    font-family:Head-Font;
+    text-align: center;
+}
+
+#menu{
+    background-color:darkslategray;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    font-family: 'Indie Flower';
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color:white;
+    background-color:grey;
+}
+
+#active{
+    background-color: limegreen;
+    color:black;
+}
+
+article{
+    font-family: 'Indie Flower';
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+
+footer p{
+    background-color: darkslategray;
+    font-weight: 600;
+    font-family: 'Indie Flower';
+    font-size: 1.3em;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+}
+
+img{
+    width:100%;
+}
+
+.hobbies-list{
+    list-style-type:square
+}
+
+.filmandseries{
+    list-style-type:square
+}
