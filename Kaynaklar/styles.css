@@ -66,15 +66,15 @@ img{
     border-radius: 10%;
 }
 
-#photo{
+#foto{
     border-radius: 50%;
 }
 
-.hobbies-list{
+.hobiler{
     list-style-type:square
 }
 
-.filmandseries{
+.filmler{
     list-style-type:square
 }
 
@@ -85,6 +85,10 @@ img{
     }
 }
 
-.text-picture {
+.foto-yazisi {
     text-align: center;
+}
+
+fieldset{
+    border: 2px solid;
 }
