@@ -1,13 +1,12 @@
-# Web-Homework
-It's a homework for Web Technologies Course
+# Web-Ödevi
+Bu Web Teknolojileri dersi ödevidir.
 
-### Details of Homework <br/>
+### Ödevi Detayları <br/>
 
-A web site ,introducing the student himself and his hometown, will be created. <br/>
-There will be a about me page which is as a homepage and it will contain self-introductory information (Hobbies etc.), pictures, links of his favorite sports and activities. <br>
-There will be a CV page which contains education information.<br/>
-There will be a page called My Town and this page will contain information about student’s hometown or any town which student love (Population of the town, places to visit etc.). There will be a slider with least 4 pictures at the top or bottom of page. There will be a link of each pictures. <br/>
-There will be a page called Our Heritage and this page will introduce an important cultural heritage work of the city.<br/>
-There will be a page called Our Team (about Soccer, Basketbool etc.) and this page introduce team of city.<br/>
-There will be a login page.<br/>
-There will be a contact page.<br/>
+Öğrencinin kendini ve şehrini tanıttığı bir web sitesi oluşturulacak. <br/>
+Ana sayfa niteliğinde, hakkımda sayfası olacak ve bu sayfa öz-tanıtım, hobiler, yapılan aktiviteler hakkında bilgi ve bunlara ait resim ve linkler bulunduracak.
+Eğitim bilgilerini içeren bir cv sayfası oluştulacak. <br/>
+Şehrim adında bir sayfa olacak ve bu sayfa öğrencinin memleketi ya da herhangi bir sevdiği şehir hakkında olacak. Sayfanın sonunda en az 4 fotoğraftan oluşan bir slayt olacak. Her bir fotoğraf ile ilgili bilgi bulanacak. <br/>
+Mirasımız adlı bir sayda olacak ve bu sayfa şehre ait önemli bir kültürel mirası tanıtacak. <br/>
+Bir giriş sayfası bulunacak. <br/>
+Bir iletişim sayfası bulunacak. <br/>
