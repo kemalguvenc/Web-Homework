@@ -17,11 +17,17 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-	<!-- Diğerleri -->
-	<link rel="icon" href="Kaynaklar/ikonlar/file-signature-solid.ico" type="image/x-icon" />
-	<link href="Kaynaklar/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="Kaynaklar/styles.css" />
-	<script src="Kaynaklar/javascript.js" type="application/javascript"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/dea668164e.js" crossorigin="anonymous"></script>
+
+    <!-- İkon -->
+    <link rel="icon" href="Kaynaklar/ikonlar/city-solid.ico" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="Kaynaklar/styles.css" />
+
+    <!-- Javascript -->
+    <script src="Kaynaklar/javascript.js" type="application/javascript"></script>
 
 </head>
 
