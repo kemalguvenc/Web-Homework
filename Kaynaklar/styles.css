@@ -58,6 +58,7 @@ article {                                                   /* Sayfaýnýn içerik 
     font-family: Text-Font;
     font-size: 1.3em;
     font-weight: 400;
+    min-height: calc(100vh - 250px);
 }
 
 @media only screen and (max-width: 341px) {                 /* Geniþliði 341 pikselin altýnda olan ekranlar, Cv sayfasýnda sorun yaþadýðý için o ekranlarda yazý fontunu küçültür. */
@@ -94,7 +95,8 @@ img {                                                       /* Siteye eklenen fo
 }
 
 .selfie {                                                   /* Siteye eklenen selfie'lerin yuvarlak olmasýný saðlar. */
-    border-radius: 50%;
+    border-radius: 30%;
+    width:50%;
 }
 
 .hobiler {                                                  /* Hakkýmda sayfasýndanki hobilerim listesinin içindeki yazýlarýn kenarlarýnda olan þekli kare yapar. */
@@ -106,8 +108,14 @@ img {                                                       /* Siteye eklenen fo
 }
 
 @media only screen and (min-width: 992px) {                 /* Küçük ekranlarda Cv sayfasýný iki parçaya ayýran çizgi sorun çýkardýðý için çizgiyi sadece belirli geniþliðe sahip ekranlar da çýkartýr. */
-    #table {
+    #cv-table {
         border-left: 10px solid darkslategray;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    #iletisim-table{
+        width:50%;
     }
 }
 
