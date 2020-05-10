@@ -5,10 +5,20 @@ var texts = ["Dişbudak ağaçlarıyla çevrili ve şehrin stresinden uzak büy�
     "Kocaala ve Karasu ilçelerinin arasında akan Maden Deresi, etrafını saran ağaçlar ve şelalesiyle doğaseverleri adeta büyülüyor.",
     "Geyve Maksudiye'de bulunan Doğançay Şelalesi tabiat anıtında doğal güzelliklerin keyfini çıkarabilirsin."];
 
-/* Şehrim sayfasında bulunan fotoğraf slaytında gösterilecek yazıları yazdıran fonksiyon. */
+/* Şehrim sayfasında bulunan fotoğraf slaytı ilerletildiğinde yazıların değişmesini sağlar */
 
-function yazdir(i) {
-    document.getElementById("degisen-yazi").innerHTML = texts[i];
+function yazi_degistir() {
+
+    var i = 1;
+    $(document).ready(function () {
+
+        $("#slide-show").on('slide.bs.carousel', function () {
+            if (i > 3) i = 0;
+            document.getElementById("degisen-yazi").innerHTML = texts[i];
+            i++;
+        });
+    });
+
 }
 
 /* Kendisine parametre yoluyla verilen ifadenin dolu olup olmadığını belirtir. Eğer dolu ise true, değilse false döndürür. */
@@ -30,6 +40,7 @@ function uygunmu(ifade, tip) {
     var adsoyad_pattern = /[<">!£'#^$+½%&{/[()}=?|_*.:,;`0123456789]/g;
 
     if (tip == "eposta") {
+        ifade.toLowerCase();
         if (ifade.search(eposta_pattern) == -1) {
             return false;
         }
@@ -114,18 +125,21 @@ function Iletisim_Kontrol() {
 
 }
 
-/* Şehrim sayfasında bulunan fotoğraf slaytı ilerletildiğinde yazıların değişmesini sağlar */
+/* İletişim sayfasındaki tarih input'una girilecek verinin en fazla bugün olmasını sağlar. */
 
-function yazi_degistir() {
+function max_tarih() {
+    var today = new Date;
+    var gun = today.getDate();
+    var ay = today.getMonth() + 1;
+    var yil = today.getFullYear();
 
-    var i = 1;
-    $(document).ready(function () {
+    if (gun < 10)
+        gun = '0' + gun
 
-        $("#slide-show").on('slide.bs.carousel', function () {
-            if (i > 3) i = 0;
-            yazdir(i);
-            i++;
-        });
-    });
+    if (ay < 10)
+        ay = '0' + ay
 
+    today = yil + '-' + ay + '-' + gun;
+
+    document.getElementById("tarih").setAttribute("max", today); 
 }

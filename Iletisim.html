@@ -33,7 +33,7 @@
 
 <body>
     <header>
-        İLETİŞİM
+        İLETİŞİM KURUN
     </header>
 
     <nav>
@@ -79,7 +79,7 @@
             <div class="row">
                 <div class="col-lg"></div>
                 <div class="col-lg-9">
-                    <form action="Iletisim.php" method="post" onsubmit=" return Iletisim_Kontrol()">
+                    <form action="Iletisim.php" method="post" onsubmit="return Iletisim_Kontrol()">
                         <fieldset class="p-2">
                             <legend class="w-auto">İletişim Formu</legend>
                             <table>
@@ -129,7 +129,7 @@
                                 </tr>
                                 <tr>
                                     <td><label for="tarih"><span class="uyari">*</span>Sorunun oluştuğu tarih:</label></td>
-                                    <td><input type="date" id="tarih" name="tarih" /></td>
+                                    <td><input type="date" id="tarih" name="tarih" max='0-0-0' /></td>
                                 </tr>
                                 <tr>
                                     <td><label for="dosya">Göndermek istediğiniz dosya (eğer varsa)</label></td>
@@ -137,11 +137,11 @@
                                 </tr>
                                 <tr>
                                     <td><label for="soru"><span class="uyari">*</span>Soru:</label></td>
-                                    <td><textarea id="soru" name="soru" rows="5" cols="15" placeholder="Doldurulması şart!"></textarea></td>
+                                    <td><textarea id="soru" name="soru" rows="5" cols="25" placeholder="Doldurulması şart!"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <td><input type=submit value="Gönder" /></td>
-                                    <td><input type="reset" value="Temizle" /></td>
+                                    <td><input type=reset value="Temizle" /></td>
+                                    <td><input type="submit" value="Gönder" /></td>
                                 </tr>
                             </table>
                         </fieldset>
@@ -157,6 +157,14 @@
     <footer>
         <p>Kişisel Web Sayfam --- #EvdeKalTürkiye</p>
     </footer>
+
+    <script>
+
+        /* Tarih input'una girilecek verinin en fazla bugün olmasını sağlar. */
+
+        max_tarih();
+
+    </script>
 
 </body>
 </html>

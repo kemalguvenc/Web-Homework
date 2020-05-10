@@ -33,7 +33,7 @@
 
 <body>
 	<header>
-		İLETİŞİM
+		İLETİŞİM KURUN
 	</header>
 
 	<nav>

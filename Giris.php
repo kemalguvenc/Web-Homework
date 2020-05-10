@@ -89,7 +89,7 @@
 				$ad=$_POST["ad"];
 				$soyad=$_POST["sifre"];
 
-				if($ad=="B181210000@sakarya.edu.tr" && $sifre=="123456789"){
+				if($ad=="b181210076@sakarya.edu.tr" && $sifre=="123456789"){
 
 				echo "<div class='col col-xs col-sm col-md col-lg col-xl'></div>
 				<div class='col col-xs col-sm col-md col-lg col-xl'>
@@ -116,8 +116,6 @@
 	<footer>
 		<p>Kişisel Web Sayfam --- #EvdeKalTürkiye</p>
 	</footer>
-
-	<script>Giris_Kontrol();</script>
 
 </body>
 </html>
