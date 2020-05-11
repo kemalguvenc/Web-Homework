@@ -132,10 +132,10 @@
                                     <td><input type="date" id="tarih" name="tarih" max='0-0-0' /></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="dosya">Sorunla ilgili fotoğraf(lar): (eğer varsa)</label></td>
+                                    <td><label for="dosya">Sorunla ilgili fotoğraf: (eğer varsa)</label></td>
                                     <td>
-                                        <button type="button" id="btn-dosya" onclick="dosya_tiklama()" >Dosyayı Yükle</button>
-                                        <input type="file" id="dosya" name="dosya" multiple onchange="dosya_isim_degistir()"/>
+                                        <button type="button" id="btn-dosya" onclick="dosya_tiklama()">Fotoğrafı Yükle</button>
+                                        <input type="file" id="dosya" name="dosya" onchange="dosya_isim_degistir(1)" />
                                     </td>
                                 </tr>
                                 <tr>
@@ -143,7 +143,7 @@
                                     <td><textarea id="soru" name="soru" rows="5" cols="25" placeholder="Doldurulması şart!"></textarea></td>
                                 </tr>
                                 <tr>
-                                    <td><input type="reset" value="Temizle" /></td>
+                                    <td><input type="reset" value="Temizle" onclick="dosya_isim_degistir(2)"/></td>
                                     <td><input type="submit" value="Gönder" /></td>
                                 </tr>
                             </table>

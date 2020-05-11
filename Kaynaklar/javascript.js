@@ -157,12 +157,20 @@ function dosya_tiklama() {
 
 /* İletişim sayfasında bulunan dosya input'unun değerini butona isim olarak verir.  */
 
-function dosya_isim_degistir() {
+function dosya_isim_degistir(x) {
 
-    dosya_ismi = document.getElementById("dosya").value;
-    dosya_ismi=dosya_ismi.split('\\').pop().split('/').pop();
+    if (x == 1) {
+        dosya_ismi = document.getElementById("dosya").value;
+        dosya_ismi = dosya_ismi.split('\\').pop().split('/').pop();
 
-    if (dosya_ismi != "")
-        document.getElementById("btn-dosya").innerHTML = dosya_ismi;
+        if (dosya_ismi != "")
+            document.getElementById("btn-dosya").innerHTML = dosya_ismi;
+    }
+
+    else if (x == 2) {
+
+        document.getElementById("btn-dosya").innerHTML = "Fotoğrafı Yükle";
+
+    }
 
 }
