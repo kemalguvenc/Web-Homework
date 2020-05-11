@@ -12,8 +12,10 @@ function yazi_degistir() {
     var i = 1;
     $(document).ready(function () {
 
-        $("#slide-show").on('slide.bs.carousel', function () {
-            if (i > 3) i = 0;
+        $("#slayt").on('slide.bs.carousel', function () {
+            if (i > 3)
+                i = 0;
+
             document.getElementById("degisen-yazi").innerHTML = texts[i];
             i++;
         });
@@ -24,6 +26,8 @@ function yazi_degistir() {
 /* Kendisine parametre yoluyla verilen ifadenin dolu olup olmadığını belirtir. Eğer dolu ise true, değilse false döndürür. */
 
 function dolumu(ifade) {
+
+    ifade = ifade.trim();
 
     if (ifade == null || ifade == "")
         return false;
@@ -141,4 +145,24 @@ function max_tarih() {
     today = yil + '-' + ay + '-' + gun;
 
     document.getElementById("tarih").setAttribute("max", today);
+}
+
+/* İletişim sayfasında bulunan dosya input'una tıklanma olayını meydana getirir. */
+
+function dosya_tiklama() {
+
+    document.getElementById("dosya").click();
+
+}
+
+/* İletişim sayfasında bulunan dosya input'unun değerini butona isim olarak verir.  */
+
+function dosya_isim_degistir() {
+
+    dosya_ismi = document.getElementById("dosya").value;
+    dosya_ismi=dosya_ismi.split('\\').pop().split('/').pop();
+
+    if (dosya_ismi != "")
+        document.getElementById("btn-dosya").innerHTML = dosya_ismi;
+
 }

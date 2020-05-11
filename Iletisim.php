@@ -83,59 +83,63 @@
 						<legend class="w-auto">Göndermek İstediğiniz İletişim Formu</legend>
 						<table>
 							<tr>
-								<td><label for="ad">Ad:</label></td>
-								<td id="ad">
+								<td>Ad:</td>
+								<td>
 									<?php echo $_POST["ad"]; ?>
 								</td>
 							</tr>
 							<tr>
-								<td><label for="soyad">Soyad:</label></td>
-								<td id="soyad">
+								<td>Soyad:</td>
+								<td>
 									<?php echo $_POST["soyad"]; ?>
 								</td>
 							</tr>
 							<tr>
-								<td><label for="eposta">E-Posta:</label></td>
-								<td id="eposta">
+								<td>E-Posta:</td>
+								<td>
 									<?php echo $_POST["eposta"]; ?>
 								</td>
 							</tr>
 							<tr>
-								<td><label for="cinsiyet">Cinsiyet:</label></td>
-								<td id="cinsiyet">
+								<td>Cinsiyet:</td>
+								<td>
 									<?php echo $_POST["cinsiyet"]; ?>
 								</td>
 							</tr>
 							<tr>
-								<td><label for="konular">Soracağınız konular:</label></td>
-								<td id="konular">
+								<td>Soracağınız konular:</td>
+								<td>
 									<?php
-									for($i=0;$i<count($_POST["konu"]);$i++) 
-										echo $_POST["konu"][$i]."<br/>";
+										echo join(" ",$_POST["konu"]);
                                      ?>
 								</td>
 							</tr>
 							<tr>
-								<td><label for="aciliyet">Sorunun aciliyeti:</label></td>
-								<td id="aciliyet">
+								<td>Sorunun aciliyeti:</td>
+								<td>
 									<?php echo $_POST["aciliyet"]; ?>
 								</td>
 							</tr>
 							<tr>
-								<td><label for="tarih">Sorunun ilk olduğu tarih:</label></td>
-								<td id="tarih">
+								<td>Sorunun ilk olduğu tarih:</td>
+								<td>
 									<?php echo $_POST["tarih"]; ?>
 								</td>
 							</tr>
+
+							<?php
+								if($_POST["dosya"]!=""){
+									echo "
+									<tr>
+										<td>Sorunla ilgili fotoğraf:</td>
+										<td>" . $_POST["dosya"] . "</td>
+									</tr>";
+								}
+							?>
+
 							<tr>
-								<td><label for="dosya">Göndermek istediğiniz dosya (eğer varsa)</label></td>
-								<td id="dosya">
-									<?php echo $_POST["dosya"]; ?>
-								</td>
-							</tr>
-							<tr>
-								<td><label for="soru">Soru:</label></td>
-								<td id="soru">
+								<td>Soru:</td>
+								<td>
 									<?php echo $_POST["soru"]; ?>
 								</td>
 							</tr>

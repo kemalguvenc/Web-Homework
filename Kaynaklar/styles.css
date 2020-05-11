@@ -113,12 +113,6 @@ img {                                                       /* Siteye eklenen fo
     }
 }
 
-@media only screen and (max-width: 470px){
-    #iletisim-table{
-        width:50%;
-    }
-}
-
 fieldset {                                                  /* Ýletiþim sayfasýndaki formun etrafýný saran kenarlarýn kalýnlýðýný ayarlar. */
     border: 2px solid;
 }
@@ -139,4 +133,8 @@ fieldset {                                                  /* Ýletiþim sayfasýn
     border-radius: 5%;
     background-color: darkslategray;
     color:white;
+}
+
+#dosya {                                                    /* Ýletiþim formunda dosya input'u, küçük cihazlarda table'ýn görüntüsünü bozduðu için gizlenir ve onun yerine buton gösterilir. */
+    width: 0px;
 }
