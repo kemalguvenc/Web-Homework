@@ -65,7 +65,7 @@
 					</a>
 				</div>
 				<div class="col-lg">
-					<a href="Giris.html">
+					<a href="Giris.html" id="active">
 						<i class="fas fa-sign-in-alt fa-fw"></i> Çıkış
 					</a>
 				</div>
@@ -86,24 +86,30 @@
 			<div class="row">
 				<?php
 
-				$ad=$_POST["ad"];
-				$soyad=$_POST["sifre"];
+				if($_SERVER["REQUEST_METHOD"]=="POST"){
+				
+					$eposta=$_POST["ad"];
+					$sifre=$_POST["sifre"];
 
-				if($ad=="b181210076@sakarya.edu.tr" && $sifre=="123456789"){
+					$eposta=strtolower($eposta); /* E-postanın baş harfi büyük olunca sıkıntı çıkmasını engeller. */
 
-				echo "<div class='col col-xs col-sm col-md col-lg col-xl'></div>
-				<div class='col col-xs col-sm col-md col-lg col-xl'>
+					if($eposta=="b181210076@sakarya.edu.tr" && $sifre=="123456789"){
+
+					echo "<div class='col col-xs col-sm col-md col-lg col-xl'></div>
+					<div class='col col-xs col-sm col-md col-lg col-xl'>
 					<p><h1>'Sisteme giriş yaptınız!'</h1></p>
-				</div>
-				<div class='col col-xs col-sm col-md col-lg col-xl' '></div>";
-				}
+					</div>
+					<div class='col col-xs col-sm col-md col-lg col-xl' '></div>";
+					}
 
-				else {
-				echo "
-				<script>
+					else {
+					echo "
+					<script>
                         alert('Girdiğiniz bilgiler geçersiz. Giriş sayfasına yönlendiriliyorusunuz.');
                         window.location = 'Giris.html';
-				</script>";
+					</script>";
+					}
+
 				}
 
 				?>

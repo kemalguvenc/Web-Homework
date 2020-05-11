@@ -1,9 +1,9 @@
-@font-face {                                                /* Baþlýktaki yazýlar için font ekler. Kaynak: https://www.fonttr.com/fontDeta?font=levibrush*/
+@font-face {                                                /* Baþlýktaki yazýlar için font ekler. Kaynak: https://www.fonttr.com/fontDeta?font=levibrush */
     font-family: Head-Font;
     src: url(Font/Baslik/LEVIBRUSH.ttf);
 }
 
-@font-face {                                                /* Sitenin genelinde kullanýlan fontu ekler. Kaynak: https://www.fonttr.com/fontDeta?font=rumraisin-regular*/
+@font-face {                                                /* Sitenin genelinde kullanýlan fontu ekler. Kaynak: https://www.fonttr.com/fontDeta?font=rumraisin-regular */
     font-family: Text-Font;
     src: url(Font/Genel/RumRaisin-Regular.ttf);
 }

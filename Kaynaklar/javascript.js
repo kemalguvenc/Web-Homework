@@ -35,12 +35,11 @@ function dolumu(ifade) {
 
 function uygunmu(ifade, tip) {
 
-    ifade = ifade.trim();
     var eposta_pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
     var adsoyad_pattern = /[<">!£'#^$+½%&{/[()}=?|_*.:,;`0123456789]/g;
 
     if (tip == "eposta") {
-        ifade.toLowerCase();
+        ifade = ifade.toLowerCase();
         if (ifade.search(eposta_pattern) == -1) {
             return false;
         }
@@ -141,5 +140,5 @@ function max_tarih() {
 
     today = yil + '-' + ay + '-' + gun;
 
-    document.getElementById("tarih").setAttribute("max", today); 
+    document.getElementById("tarih").setAttribute("max", today);
 }

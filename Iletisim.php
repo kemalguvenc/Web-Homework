@@ -110,8 +110,9 @@
 								<td><label for="konular">Soracağınız konular:</label></td>
 								<td id="konular">
 									<?php
-									for($i=0;$i<count($_POST["konu"]);$i++) echo $_POST["konu"][$i]."<br/>";
-                                        ?>
+									for($i=0;$i<count($_POST["konu"]);$i++) 
+										echo $_POST["konu"][$i]."<br/>";
+                                     ?>
 								</td>
 							</tr>
 							<tr>
